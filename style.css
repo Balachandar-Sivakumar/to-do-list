@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+.inp{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+    border: 3px solid rgb(179, 174, 174);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 8px;
+}
+
+
+button{
+    padding: 10px;
+    background-color: rgb(53, 209, 33);
+    border-radius: 8px;
+    color: rgb(59, 19, 19);
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: .3s;
+    z-index: -1;
+    background-color: rgb(12, 12, 26);
+}
+
+button:hover::before{
+    width: 100%;
+}
+button:hover{
+    color: white;
+    cursor: pointer;
+    
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}
+#display{
+    padding: 10px;
+    height: 30px;
+    border: 3px gray solid;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.del{
+    background-color: red;
+    padding: 8px 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+.del:hover{
+    background-color: rgb(175, 119, 119);
+}
+.del:active{
+    background-color: red;
+}
+.inp{
+    filter: drop-shadow(3px 3px 4px black);
+}
+
+.check{
+    height: 15px;
+    width: 15px;
+}
+
+
+
+
+
